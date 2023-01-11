@@ -1,8 +1,12 @@
 import React from 'react';
 import { StarIcon , ShoppingCartIcon} from '@heroicons/react/24/solid'
+import { fakeDb } from '../../utilities/fakeDb';
 const Product = ({ product ,setHandelar}) => {
-   
      const { id, name, price, seller, ratings, img } = product
+
+     const addToLocal=(id)=>{
+        fakeDb(id)
+     }
     return (
         <div className="card w-72 h-[500px] p-2 border-2 border-violet-500 bg-base-100 shadow-xl">
             <figure><img className='w-full h-[286px]'  src={img} alt="Shoes" /></figure>
@@ -19,7 +23,7 @@ const Product = ({ product ,setHandelar}) => {
                 </div>
                 <div className="card-actions ">
                     <button onClick={()=>{
-                        setHandelar(product) 
+                        setHandelar(product) ,addToLocal(id)
                         }} className="btn btn-primary w-full ">Buy Now <ShoppingCartIcon className=" ml-2 h-6 w-6"></ShoppingCartIcon></button>
                        
                 </div>

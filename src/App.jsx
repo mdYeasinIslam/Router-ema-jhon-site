@@ -1,16 +1,16 @@
 import './App.css'
 
-import Home from './Components/Product/Product'
 import Navbar from './Components/Navbar/Navbar'
 import Products from './Components/Products/Products'
+import Root from './Router/Root'
 
 function App() {
 
   return (
     <div>
-      <Navbar></Navbar>
-    
-      <Products></Products>
+
+      <Root></Root>
+
 
     </div>
   )

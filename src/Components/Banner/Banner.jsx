@@ -6,7 +6,7 @@ const Banner = () => {
             <div className='col-span-2 grid justify-end'>
                 <div className="text-orange-300 font-semibold">
                     <p>Sale up to 70% off!</p>
-                </div>
+                </div> 
                 <h1 className='  md:text-4xl font-bold'>New Collection For Fall ..</h1>
                 <p className='md:font-semibold'>Lorem ipsum, dolor sit amet.</p>
                 <div className=' mt-[4vh]'>
